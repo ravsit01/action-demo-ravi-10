@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sidapp01
+  name: ravipp01
 spec:
   selector:
     matchLabels:
-      app: sidapp01
+      app: raviapp01
   template:
     metadata:
       labels:
-        app: sidapp01
+        app: raviapp01
     spec:
       containers:
-      - name: sidapp01
-        image: psacr02.azurecr.io/<your-name>app01:latest
+      - name: raviapp01
+        image: psacr02.azurecr.io/raviapp01:latest
         resources:
           limits:
             memory: "128Mi"
